@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  background: #db882a;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+header img {
+  height: 80%;
+  margin-left: 16px;
+}
+
+header p {
+  font-family: monospace;
+  color: whitesmoke;
+  font-size: 48px;
+  margin-left: 32px;
+  margin-right: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.meme {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.meme img {
+  width: 100%;
+  max-height: 800px;
+}
+
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: sans-serif;
   color: white;
+  letter-spacing: 1px;
+  font-size: 48px;
+  text-shadow: black 5px 5px 30px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.meme > .bottom {
+  bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme > .top {
+  top: 0;
+}
+
+.meme-form {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.meme-form > input {
+  width: 45%;
+  height: 40px;
+}
+
+.meme-form > button {
+  border: none;
+  font-family: monospace;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: #db882a;
 }
