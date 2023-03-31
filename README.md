@@ -1,4 +1,4 @@
-# Learning React...
+# First React Project
 
 Initially created using class components in React and has now been converted to modern code:
 - Functional components
